@@ -1,0 +1,234 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.result-card {
+    background-color: #ffffff;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    width: 90%;
+    overflow: hidden;
+}
+
+.result-section {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #ffffff;
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-section h2 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.result-section .score {
+    background-color: hsla(241, 92%, 15%, 0.547);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.result-section .score .score-value {
+    display: block;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.result-section .score .score-out-of {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.result-section h3 {
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.result-section p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.summary-section {
+    padding: 40px;
+    flex: 1;
+}
+
+.summary-section h2 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.summary-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.summary-section .summary-item {
+    background-color: #f8f8f8;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.summary-section .summary-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.summary-section .summary-title {
+    font-size: 18px;
+    flex-grow: 1;
+    font-weight: 600;
+}
+
+.summary-section .summary-score {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.continue-button {
+    background-color: #2d3e50;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 20px 80px;
+    max-width: 60%;
+}
+
+@media (max-width: 767px) {
+    .result-card {
+        flex-direction: column;
+    }
+
+    .result-section {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .summary-section {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .result-section h2, .summary-section h2 {
+        font-size: 20px;
+    }
+
+    .result-section .score {
+        height: 150px;
+        width: 150px;
+    }
+
+    .result-section .score .score-value {
+        font-size: 48px;
+    }
+
+    .result-section .score .score-out-of, .result-section h3 {
+        font-size: 20px;
+    }
+
+    .result-section p {
+        font-size: 14px;
+    }
+
+    .summary-section ul {
+        margin: 0;
+    }
+
+    .summary-section .summary-item {
+        padding: 15px;
+    }
+
+    .summary-section .summary-title, .summary-section .summary-score {
+        font-size: 16px;
+    }
+
+    .continue-button {
+        padding: 15px 60px;
+        max-width: 80%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .result-card {
+        max-width: 1440px;
+    }
+
+    .result-section, .summary-section {
+        padding: 60px;
+    }
+
+    .result-section h2, .summary-section h2 {
+        font-size: 32px;
+    }
+
+    .result-section .score {
+        height: 250px;
+        width: 250px;
+    }
+
+    .result-section .score .score-value {
+        font-size: 80px;
+    }
+
+    .result-section .score .score-out-of, .result-section h3 {
+        font-size: 28px;
+    }
+
+    .result-section p {
+        font-size: 18px;
+    }
+
+    .summary-section .summary-item {
+        padding: 30px;
+    }
+
+    .summary-section .summary-title, .summary-section .summary-score {
+        font-size: 20px;
+    }
+
+    .continue-button {
+        padding: 25px 100px;
+        font-size: 20px;
+    }
+}
